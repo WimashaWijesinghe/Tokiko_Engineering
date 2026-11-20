@@ -1,0 +1,39 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> smart-simple-pos-nextjs@1.1.0 build
+> next build
+
+   ▲ Next.js 15.5.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.5s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/10) ...
+   Generating static pages (2/10) 
+   Generating static pages (4/10) 
+   Generating static pages (7/10) 
+ ✓ Generating static pages (10/10)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    26.1 kB         129 kB
+├ ○ /_not-found                            993 B         104 kB
+├ ƒ /api/bootstrap                         141 B         103 kB
+├ ƒ /api/grns                              141 B         103 kB
+├ ƒ /api/invoices                          141 B         103 kB
+├ ƒ /api/invoices/pay                      141 B         103 kB
+├ ƒ /api/items                             141 B         103 kB
+├ ƒ /api/quotations                        141 B         103 kB
+├ ƒ /api/settings                          141 B         103 kB
+└ ƒ /api/warranty-search                   141 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-73938ce8a8eac1ad.js       46.6 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)           2.1 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

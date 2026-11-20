@@ -1,0 +1,22 @@
+Import complete. Run npm run db:compare before first use.
+[ { version: '11.8.8-MariaDB-0+deb13u1 from Debian' } ]
+settings: 21 rows, every column matches
+items: 6 rows, every column matches
+customers: 1 rows, every column matches
+suppliers: 0 rows, every column matches
+quotations: 5 rows, every column matches
+quotation_items: 7 rows, every column matches
+invoices: 3 rows, every column matches
+invoice_items: 6 rows, every column matches
+grns: 0 rows, every column matches
+grn_items: 0 rows, every column matches
+item_serials: 9 rows, every column matches
+Database checks passed.
+   ▲ Next.js 15.5.29
+   - Local:        http://127.0.0.1:4500
+   - Network:      http://127.0.0.1:4500
+
+ ✓ Starting...
+ ✓ Ready in 350ms
+PASS: bootstrap, Unicode settings, items, GRN/stock, quotation edit/conversion, VAT, cheque fields, partial/full/concurrent payments, warranty, rollback, duplicate serial protection, concurrent document numbering invalid inputs, item editing, merged quotations, credit/card and manual serials.
+PASS: frontend HTTP 200; live database overwrite refused.

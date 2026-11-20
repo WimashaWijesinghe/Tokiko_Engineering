@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f4f6fb;
+  color: #0f172a;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Smooth slim scrollbars for dense POS tables & panels */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modal-in {
+  animation: modalSlideUp 0.16s ease-out both;
+}
+
+/* Base print configuration - dynamic @page styles are injected per layout */
+@media print {
+  html, body {
+    background-color: white !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #printModalContent,
+  #printModalContent * {
+    visibility: visible;
+  }
+  #printModal {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #printModal > div {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  #printModalContent {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Rubber stamp effect for Invoice preview */
+.credit-sale-stamp {
+  border: 3px double #1e3a8a;
+  color: #1e3a8a;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 6px 16px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(30, 58, 138, 0.03);
+}
+
+.inspection-stamp {
+  border: 1px dashed #475569;
+  color: #1e293b;
+  font-family: system-ui, sans-serif;
+  padding: 6px 12px;
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(241, 245, 249, 0.5);
+}

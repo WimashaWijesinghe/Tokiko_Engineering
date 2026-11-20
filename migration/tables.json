@@ -1,0 +1,188 @@
+[
+  {
+    "name": "settings",
+    "columns": [
+      "key",
+      "value"
+    ]
+  },
+  {
+    "name": "items",
+    "columns": [
+      "id",
+      "name",
+      "buying_price",
+      "selling_price",
+      "warranty_months",
+      "warranty_label",
+      "stock_qty",
+      "created_at",
+      "updated_at",
+      "description",
+      "vat_rate"
+    ]
+  },
+  {
+    "name": "customers",
+    "columns": [
+      "id",
+      "name",
+      "phone",
+      "address",
+      "created_at"
+    ]
+  },
+  {
+    "name": "suppliers",
+    "columns": [
+      "id",
+      "name",
+      "phone",
+      "company",
+      "created_at"
+    ]
+  },
+  {
+    "name": "quotations",
+    "columns": [
+      "id",
+      "quote_no",
+      "customer_id",
+      "customer_name",
+      "customer_phone",
+      "customer_address",
+      "subtotal",
+      "discount",
+      "grand_total",
+      "notes",
+      "status",
+      "converted_invoice_id",
+      "converted_invoice_no",
+      "created_at",
+      "subject",
+      "tax_amount",
+      "description"
+    ]
+  },
+  {
+    "name": "quotation_items",
+    "columns": [
+      "id",
+      "quotation_id",
+      "item_id",
+      "item_name",
+      "serial_numbers",
+      "warranty_months",
+      "warranty_label",
+      "qty",
+      "unit_price",
+      "item_discount",
+      "line_total",
+      "item_description",
+      "vat_rate",
+      "vat_amount"
+    ]
+  },
+  {
+    "name": "invoices",
+    "columns": [
+      "id",
+      "invoice_no",
+      "quotation_id",
+      "quote_no",
+      "customer_id",
+      "customer_name",
+      "customer_phone",
+      "customer_address",
+      "subtotal",
+      "discount",
+      "grand_total",
+      "paid_amount",
+      "balance_due",
+      "payment_method",
+      "payment_status",
+      "notes",
+      "created_at",
+      "subject",
+      "cheque_no",
+      "cheque_bank",
+      "cheque_date",
+      "payment_ref",
+      "tax_amount",
+      "description"
+    ]
+  },
+  {
+    "name": "invoice_items",
+    "columns": [
+      "id",
+      "invoice_id",
+      "item_id",
+      "item_name",
+      "serial_numbers",
+      "warranty_months",
+      "warranty_label",
+      "qty",
+      "buying_price",
+      "unit_price",
+      "item_discount",
+      "line_total",
+      "item_description",
+      "vat_rate",
+      "vat_amount"
+    ]
+  },
+  {
+    "name": "grns",
+    "columns": [
+      "id",
+      "grn_no",
+      "supplier_id",
+      "supplier_name",
+      "supplier_phone",
+      "ref_no",
+      "total_amount",
+      "paid_amount",
+      "notes",
+      "created_at"
+    ]
+  },
+  {
+    "name": "grn_items",
+    "columns": [
+      "id",
+      "grn_id",
+      "item_id",
+      "item_name",
+      "serial_numbers",
+      "warranty_months",
+      "warranty_label",
+      "qty",
+      "buying_price",
+      "selling_price",
+      "line_total",
+      "item_description"
+    ]
+  },
+  {
+    "name": "item_serials",
+    "columns": [
+      "id",
+      "item_id",
+      "item_name",
+      "serial_number",
+      "status",
+      "grn_id",
+      "grn_no",
+      "invoice_id",
+      "invoice_no",
+      "warranty_months",
+      "warranty_label",
+      "sold_date",
+      "warranty_expiry",
+      "customer_name",
+      "customer_phone",
+      "created_at"
+    ]
+  }
+]

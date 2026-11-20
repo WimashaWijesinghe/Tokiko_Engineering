@@ -1,0 +1,18 @@
+{
+  "source": "/workspace/scratch/ed10a7f38fd1/simple-pos-mysql/migration/source/pos_database.sqlite",
+  "sha256": "4d52f8028bd1d96294797fbb7f753f9498c1e12fd4f8ca90eed11c94d666aec0",
+  "tables": {
+    "settings": 21,
+    "items": 6,
+    "customers": 1,
+    "suppliers": 0,
+    "quotations": 5,
+    "quotation_items": 7,
+    "invoices": 3,
+    "invoice_items": 6,
+    "grns": 0,
+    "grn_items": 0,
+    "item_serials": 9
+  },
+  "integrity": "ok"
+}

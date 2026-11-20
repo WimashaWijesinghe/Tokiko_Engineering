@@ -1,0 +1,6 @@
+{
+  "src/app/page.tsx": "2d269c27442b8c0b6aae3fa9b0c7ce281a3941c9fe38a960b22512c47d7791b5",
+  "src/app/layout.tsx": "4857b92ec34924ec54ad66fe11308490de3a25756c6f3d7d7395ba5c20fc799d",
+  "src/app/globals.css": "dcc94d7b2948246887ab560ef6b0344d5ea989b397f6ed13a9b6ff3596a34a5b",
+  "src/types/pos.ts": "c2a730c4e3eb771988a46e633c165bad88371f7c96470ca6edf1c7ff81ffa0dd"
+}
